@@ -16,8 +16,11 @@
 Concepts:
 
 1: A database persistent layer is demonstrated in a code via implementing persistence layer using in-memory database
+	
 2: Spring application file is used for property configuration
+	
 3: Separate validator is used for validating input values
+	
 4: Room reservation process is not directly binded to persistence layer in order to avoid SQL queries, as in real world this is not optimal, rather a datastructure is designed in sync with database to do reservation fast without querying database.
 	Workflow:
 		* A data structure is designed using 2d matrix to keep record of reservations and to do new reservations (please see, ReservationHandler.java & BasicReservationHandler.java)
