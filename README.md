@@ -16,8 +16,7 @@
 	
 3: Console menu will apperar.
 
-
-Concepts:
+***Abstract View:
 
 1: A database persistent layer is demonstrated in a code via implementing persistence layer using in-memory database
 	
