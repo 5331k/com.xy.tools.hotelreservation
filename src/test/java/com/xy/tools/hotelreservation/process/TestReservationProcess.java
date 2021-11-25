@@ -15,7 +15,7 @@ public class TestReservationProcess {
 	public void requestOutsidePlanningPeriodTest() {
 		ReservationProcessor reservationProcessor = new ReservationProcessor();
 		final int TOTAL_ROOMS = 1;
-		reservationProcessor.createFreshRooms(TOTAL_ROOMS);
+		reservationProcessor.createNewRooms(TOTAL_ROOMS);
 		assertEquals(false, reservationProcessor.reserveRoom(new ReserveEntity(-4, 2)));
 		assertEquals(false, reservationProcessor.reserveRoom(new ReserveEntity(200, 400)));
 	}
@@ -25,7 +25,7 @@ public class TestReservationProcess {
 	public void requestsAcceptedTest() {
 		ReservationProcessor reservationProcessor = new ReservationProcessor();
 		final int TOTAL_ROOMS = 3;
-		reservationProcessor.createFreshRooms(TOTAL_ROOMS);
+		reservationProcessor.createNewRooms(TOTAL_ROOMS);
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(0, 5)));
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(7, 13)));
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(3, 9)));
@@ -39,7 +39,7 @@ public class TestReservationProcess {
 	public void requestsAcceptedThanDeclinedTest() {
 		ReservationProcessor reservationProcessor = new ReservationProcessor();
 		final int TOTAL_ROOMS = 3;
-		reservationProcessor.createFreshRooms(TOTAL_ROOMS);
+		reservationProcessor.createNewRooms(TOTAL_ROOMS);
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(1, 3)));
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(2, 5)));
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(1, 9)));
@@ -51,7 +51,7 @@ public class TestReservationProcess {
 	public void requestsAcceptedThanDeclinedThanAcceptTest() {
 		ReservationProcessor reservationProcessor = new ReservationProcessor();
 		final int TOTAL_ROOMS = 3;
-		reservationProcessor.createFreshRooms(TOTAL_ROOMS);
+		reservationProcessor.createNewRooms(TOTAL_ROOMS);
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(1, 3)));
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(0, 15)));
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(1, 9)));
@@ -64,7 +64,7 @@ public class TestReservationProcess {
 	public void complexRequestsTest() {
 		ReservationProcessor reservationProcessor = new ReservationProcessor();
 		final int TOTAL_ROOMS = 2;
-		reservationProcessor.createFreshRooms(TOTAL_ROOMS);
+		reservationProcessor.createNewRooms(TOTAL_ROOMS);
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(1, 3)));
 		assertEquals(true, reservationProcessor.reserveRoom(new ReserveEntity(0, 4)));
 		assertEquals(false, reservationProcessor.reserveRoom(new ReserveEntity(2, 3)));

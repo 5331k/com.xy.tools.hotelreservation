@@ -60,7 +60,7 @@ public class ReservationProcessor {
 	 * 
 	 * @param totalRooms
 	 */
-	public boolean createFreshRooms(int totalRooms) {
+	public boolean createNewRooms(int totalRooms) {
 		logger.info("Deleting all previous and default initializations to create fresh rooms for new reservations");
 		destroyAll();
 		boolean result = this.dataAccessService.saveRooms(totalRooms);

@@ -16,7 +16,7 @@ public class MenuScreen {
 		ReservationProcessor reservationProcessor = new ReservationProcessor();
 		boolean isRoomsCreated = false;
 		while (!isRoomsCreated) {
-			isRoomsCreated = reservationProcessor.createFreshRooms(createRoomsMenu());
+			isRoomsCreated = reservationProcessor.createNewRooms(createRoomsMenu());
 		}
 
 		int choice = 0;
@@ -28,7 +28,7 @@ public class MenuScreen {
 				boolean result = reservationProcessor.reserveRoom(reserveEntity);
 				break;
 			case 2:
-				reservationProcessor.createFreshRooms(createRoomsMenu());
+				reservationProcessor.createNewRooms(createRoomsMenu());
 				break;
 			case 3:
 				break;
