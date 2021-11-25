@@ -9,7 +9,7 @@
 ## Launching via command line
 
 1. Navigate to the root directoy of your project
-2. Execute command <mvn spring-boot:run>	
+2. Execute command mvn spring-boot:run	
 3. Console menu will apperar.
 
 ## Abstract View:
