@@ -1,22 +1,18 @@
 # com.xy.tools.hotelreservation
 
-***Launching via STS/Eclipse
+##Launching via STS/Eclipse
 
-1: Simply import project into STS/Eclipse as maven project
+1. Simply import project into STS/Eclipse as maven project
+2. Launch application as springboot 
+3. Console menu will appear, choose the desired options and proceed
 
-2: Launch application as springboot 
+##Launching via command line
 
-3: Console menu will appear, choose the desired options and proceed
+1. Navigate to the root directoy of your project
+2. Execute command <mvn spring-boot:run>	
+3. Console menu will apperar.
 
-***Launching via command line
-
-1: Navigate to the root directoy of your project
-
-2: Execute command <mvn spring-boot:run>
-	
-3: Console menu will apperar.
-
-***Abstract View:
+##Abstract View:
 
 1: A database persistent layer is demonstrated in a code via implementing persistence layer using in-memory database
 	
