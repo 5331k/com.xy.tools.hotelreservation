@@ -36,7 +36,7 @@ public class ReservationProcessor {
 	}
 
 	/**
-	 * This method is a simulation of the concept that when application will start
+	 * This method is for the concept that when application will start
 	 * it will immediately load data from database into data structure so
 	 * reservation finding algorithm can compute fast
 	 */
@@ -56,7 +56,7 @@ public class ReservationProcessor {
 	}
 
 	/**
-	 * create fresh room, via destroying prior resources bind to old size of rooms
+	 * create fresh room, via destroying prior resources bound to old size of rooms
 	 * 
 	 * @param totalRooms
 	 */
