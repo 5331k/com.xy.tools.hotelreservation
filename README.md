@@ -33,7 +33,7 @@
 	
 		* The main algorithm is in the method(BasicReservationHandler.performReservation) that checks existing reservation and either accept or decline request, If request is accepted then its also saved in database
 	
-		* Database is always in-sync with reservation data structure and reservation finding algorithm however its never used directly to find reservation rather its only used to keep the reservation track and load it if the application is restarted.
+		* Database is always in-sync with reservation data structure and reservation finding algorithm however its never used directly to find reservation rather its only used to keep the reservation track and to simulate data persistence for applicaiton restart scenario.
 	
 	Tests:
 		* TestReservationProcess.java represents all the examples test mentioned in the document
