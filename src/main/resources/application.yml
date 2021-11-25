@@ -1,0 +1,21 @@
+application:
+  description: "@project.description@"
+  version: "@project.version@"
+  title: "hotelreservation"
+
+hotel:
+   maxRooms: 1000
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driverClassName: org.h2.Driver
+    url: "jdbc:h2:mem:hotelreservation;INIT=CREATE SCHEMA IF NOT EXISTS master"
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
